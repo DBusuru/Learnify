@@ -1,0 +1,72 @@
+.carousel .control-arrow {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 20px;
+}
+
+.carousel .control-next.control-arrow {
+  right: 20px;
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel .carousel-status {
+  display: none;
+}
+
+.animated.slideInDown {
+  animation: slideInDown 1s ease;
+}
+
+.animated.slideInLeft {
+  animation: slideInLeft 1s ease;
+}
+
+.animated.slideInRight {
+  animation: slideInRight 1s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
